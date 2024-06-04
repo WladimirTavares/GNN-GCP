@@ -1,5 +1,9 @@
 import sys, os
+
 import tensorflow as tf
+
+#import tensorflow.compat.v1 as tf
+#tf.disable_v2_behavior()
 
 sys.path.insert(1, os.path.join(sys.path[0], '..'))
 from graphnn import GraphNN

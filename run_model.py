@@ -4,6 +4,8 @@ import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 import sys, os, time, random, argparse, timeit
 import tensorflow as tf
+#import tensorflow.compat.v1 as tf
+#tf.disable_v2_behavior()
 import numpy as np
 from itertools import islice
 from functools import reduce

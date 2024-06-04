@@ -146,7 +146,7 @@ def gen_matrix(N, prob):
   return Ma
 
 def degree_ranking(Ma):
-  G = nx.from_numpy_matrix(Ma)
+  G = nx.from_numpy_array(Ma)
   deg = np.asarray(gp.degree_sequence(G))
   deg = (np.amax(deg)+1) - deg #higher degree comes first
   deg_rank = np.argsort(deg)
